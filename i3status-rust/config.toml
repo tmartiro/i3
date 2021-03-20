@@ -1,4 +1,8 @@
-theme = "solarized-dark"
+#theme = "solarized-dark"
+
+[theme]
+file = "solarized-dark.toml"
+
 
 [icons]
 name = "awesome"
@@ -45,3 +49,4 @@ format = "{percentage}% {time}"
 block = "time"
 interval = 60
 format = "%a %d/%m %R"
+

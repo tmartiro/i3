@@ -4,10 +4,6 @@
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
 #
-
-
-
-
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
@@ -17,11 +13,11 @@ set $alt Mod1
 
 
 gaps inner 10
-gaps outer -10
+gaps outer 0
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 11
+font pango:ubuntu 12
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -38,7 +34,7 @@ font pango:monospace 11
 floating_modifier $mod
 
 # Startup
-exec --no-startup-id xsetroot -solid "#333333"
+exec --no-startup-id nitrogen --restore
 exec --no-startup-id nm-applet
 
 # Print Screen                                                                                
@@ -64,8 +60,9 @@ bindsym Control+$alt+l exec i3lock-fancy
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # class                 border  bground text    indicator child_border
-client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
-client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+#client.focused         #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused          #D1BA34 #D1BA34 #222222 #6272A4   #D1BA34
+client.focused_inactive #44475A #36454F #818181 #44475A   #44475A
 client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
 client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
 client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
