@@ -1,5 +1,3 @@
-#theme = "solarized-dark"
-
 [theme]
 file = "solarized-dark.toml"
 
@@ -28,9 +26,9 @@ display_type = "memory"
 format_mem = "{Mup}%"
 format_swap = "{SUp}%"
 
-[[block]]
-block = "cpu"
-interval = 1
+#[[block]]
+#block = "cpu"
+#interval = 1
 
 [[block]]
 block = "load"
@@ -43,10 +41,16 @@ block = "sound"
 [[block]]
 block = "battery"
 interval = 10
-format = "{percentage}% {time}"
+#format = "{percentage}% {time}"
+format = "{percentage}%"
 
 [[block]]
 block = "time"
 interval = 60
 format = "%a %d/%m %R"
+
+#[[block]]
+#block = "keyboard_layout"
+#driver = "setxkbmap"
+#interval = 1
 
